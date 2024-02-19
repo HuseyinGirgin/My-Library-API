@@ -8,7 +8,7 @@
 // fetch mongo image if you do not have it
 - docker pull mongo
 
-// create and run new container by mongo image for mongo db(only dev and test env. Do not run below command for prod.env.)
+// create and run new container for mongo db by mongo image(only dev and test env. Do not run below command for prod.env.)
 - docker run --name mongo-db-1 -d -p 27017:27017 mongo
 
 //You can execute mongo shell to check collections and documents (optional)
