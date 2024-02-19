@@ -32,6 +32,7 @@
 - docker ps
 
 // ensure two container running
+
 CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                        NAMES
 
 e08fdcec3319   my-library-api-web   "docker-entrypoint.s…"   20 seconds ago   Up 18 seconds   0.0.0.0:3000->3000/tcp     my-library-api-web-1
