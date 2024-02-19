@@ -1,0 +1,29 @@
+{
+  "name": "my-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-starter.js",
+  "scripts": {
+    "start": "env-cmd ./config/prod.env node src/app-starter.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/app-starter.js",
+    "test": "env-cmd ./config/test.env jest --watchAll --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.16",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.4.1"
+  }
+}
