@@ -4,17 +4,23 @@
 - dev.env: it is development env.
 - test.env: it is test env. for unit test.
 - prod.env: it is prod env that containers are used.
+ 
+// fetch mongo image if you do not have it
+- docker pull mongo
 
-// to run dev.env 
+// create and run new container by mongo image for mongo db(only dev and test env. Do not run below command for prod.env.)
+- docker run --name mongo-db-1 -d -p 27017:27017 mongo
+
+//You can execute mongo shell to check collections and documents (optional)
+- docker exec -it <container name> mongosh
+
+// to run dev
 - npm run dev
 
-// to run test.env  
+// to run test.env 
 - npm test 
 
 // to run prod.env use following instructions.
-
-// fetch mongo image
-- docker pull mongo
 
 // open terminal and change directory to current project directory
 - cd C:\Users\<Your computer user>\Desktop\CASE_STUDY\My-Library-API
