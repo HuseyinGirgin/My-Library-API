@@ -32,9 +32,10 @@
 - docker ps
 
 // ensure two container running
-CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS
- NAMES
+CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS          PORTS                        NAMES
+
 e08fdcec3319   my-library-api-web   "docker-entrypoint.s…"   20 seconds ago   Up 18 seconds   0.0.0.0:3000->3000/tcp     my-library-api-web-1
+
 45d35e44dc20   mongo                "docker-entrypoint.s…"   20 seconds ago   Up 19 seconds   0.0.0.0:27017->27017/tcp   my-library-api-mongodb-1
 
 // TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
