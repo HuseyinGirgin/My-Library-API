@@ -41,7 +41,10 @@ e08fdcec3319   my-library-api-web   "docker-entrypoint.s…"   20 seconds ago   
 - docker compose down
 
 **** Endpoints ****
+
+
 -POST: localhost:3000/author/create-new-author
+
 Body: {
     "name":"Huseyin Girgin",
     "country":"Turkey",
@@ -49,6 +52,7 @@ Body: {
 }
 
 -POST: localhost:3000/book/create-new-book
+
 Body: {
     "title":"title-2",
     "author":<authorId>, // you can take id by first endpoint response
@@ -62,6 +66,7 @@ Body: {
 -GET: localhost:3000/book/
 
 -PATCH: localhost:3000/book/<bookId>
+
 Body: {
     "title":"title-3",
     "price":11
