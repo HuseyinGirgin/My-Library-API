@@ -6,7 +6,7 @@ const AuthorModel = require('../foundation/models/book-model');
 const AUTH_TOKEN = process.env.TOKEN;
 let testBookId;
 let testAuthorId;
-
+//
 //POST: /book/create-new-author
 // Document should be created for author collection and each field should be equals with request body 
 test('Should create author', async () => {
